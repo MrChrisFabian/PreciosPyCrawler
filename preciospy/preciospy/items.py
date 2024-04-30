@@ -11,7 +11,7 @@ class PreciospyItem(scrapy.Item):
     name = scrapy.Field()
     pass
 #  Creamos la clase para nuestro item
-class nisseiItem(scrapy.Item):
+class itemp(scrapy.Item):
     title = scrapy.Field()
     url = scrapy.Field()
     image_url = scrapy.Field()
