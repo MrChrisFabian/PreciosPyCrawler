@@ -11,10 +11,16 @@ from itemadapter.adapter import ItemAdapter
 class PreciospyPipeline:
     def process_item(self, item, spider):
         adapter = ItemAdapter(item)
-        
-        # Si el precio tiene un signo de euro, lo eliminamos
+        #si el tittle tiene espacio lo limpiamos
+        value = adapter.get('title')
+        if value is not None:
+            value = value.replace(' ','').strip()
+            adapter['title'] = value     
+        # Si el precio tiene un signo Gs, lo eliminamos
         value = adapter.get('price')
         if value is not None:
-            value = value.replace('£','')
+            value = value.replace('Gs.','')
+            value = value.replace(' ','').strip()
             adapter['price'] = value
+        
         return item
