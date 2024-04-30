@@ -3,7 +3,7 @@ from preciospy.items import itemp
 
 
 class BookspiderSpider(scrapy.Spider):
-    name = "bookspider"
+    name = "nisseispider"
     allowed_domains = ["nissei.com"]
     start_urls = ['https://nissei.com/py/informatica/notebooks/notebooks-para-oficina-estudio/notebooks-para-trabajar?product_list_mode=grid','https://nissei.com/py/informatica/notebooks/macbook?product_list_mode=grid','https://nissei.com/py/informatica/notebooks/notebooks-para-oficina-estudio?product_list_mode=grid','https://nissei.com/py/informatica/notebooks/notebook-gamer?product_list_mode=grid','https://nissei.com/py/informatica/notebooks/notebook-creator?product_list_mode=grid','https://nissei.com/py/informatica/notebooks/notebooks-premium?product_list_mode=grid','https://nissei.com/py/informatica/accesorios-y-componentes/teclados?product_list_mode=grid','https://nissei.com/py/informatica/accesorios-y-componentes/componentes/mouses-pads?product_list_mode=grid','https://nissei.com/py/informatica/accesorios-y-componentes/monitores/gamer?product_list_mode=grid','https://nissei.com/py/informatica/accesorios-y-componentes/monitores/led?product_list_mode=grid','https://nissei.com/py/informatica/accesorios-y-componentes/monitores/curvo?product_list_mode=grid','https://nissei.com/py/electronica/audio-y-video/auriculares?product_list_mode=grid']
     

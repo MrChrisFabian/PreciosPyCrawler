@@ -3,7 +3,7 @@ from preciospy.items import itemp
 
 
 class VisuarSpider(scrapy.Spider):
-    name = "bookspider"
+    name = "visuarspider"
     allowed_domains = ["visuar.com.py"]
     start_urls = ['https://visuar.com.py/gaming-streaming/gaming-mouse/?order=product.position.asc&resultsPerPage=9999999','https://visuar.com.py/gaming-streaming/monitores-gamers/?order=product.position.asc&resultsPerPage=9999999','https://visuar.com.py/gaming-streaming/teclado/?order=product.position.asc&resultsPerPage=9999999','https://visuar.com.py/informatica/notebooks/?order=product.position.asc&resultsPerPage=9999999','https://visuar.com.py/audio/auriculares/?order=product.position.asc&resultsPerPage=9999999']
 

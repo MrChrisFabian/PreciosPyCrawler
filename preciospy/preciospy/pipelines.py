@@ -20,6 +20,7 @@ class PreciospyPipeline:
         value = adapter.get('price')
         if value is not None:
             value = value.replace('Gs.','')
+            value = value.replace('₲','')
             value = value.replace(' ','').strip()
             adapter['price'] = value
         
