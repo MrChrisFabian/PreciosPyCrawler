@@ -1,6 +1,6 @@
 import scrapy
 from preciospy.items import itemp
-
+import pymongo
 
 class VisuarSpider(scrapy.Spider):
     name = "visuarspider"
@@ -9,9 +9,6 @@ class VisuarSpider(scrapy.Spider):
 
     custom_settings = {
         'ROBOTSTXT_OBEY': False,
-        'FEEDS': {
-            'visuarProduct.json': {'format': 'json'},
-        },
     }
     
     def parse(self, response):

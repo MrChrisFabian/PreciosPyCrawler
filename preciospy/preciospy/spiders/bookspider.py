@@ -9,9 +9,6 @@ class BookspiderSpider(scrapy.Spider):
     
     custom_settings = {
         'ROBOTSTXT_OBEY': False,
-        'FEEDS': {
-            'nisseiProduct.json': {'format': 'json'},
-        },
     }
 
     def parse(self, response):

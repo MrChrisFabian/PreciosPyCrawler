@@ -12,7 +12,6 @@ BOT_NAME = "preciospy"
 SPIDER_MODULES = ["preciospy.spiders"]
 NEWSPIDER_MODULE = "preciospy.spiders"
 
-FEEDS = {'nisseiProduct.json':{'format':'json'}}
 
 SCRAPEOPS_API_KEY = "27bb1cad-e8d9-4776-adf8-c3323e165a4a"
 SCRAPEOPS_FAKE_USER_AGENT_ENDPOINT = 'https://headers.scrapeops.io/v1/user-agents'

@@ -9,9 +9,6 @@ class PulsoSpider(scrapy.Spider):
 
     custom_settings = {
         'ROBOTSTXT_OBEY': False,
-        'FEEDS': {
-            'pulsoGProduct.json': {'format': 'json'},
-        },
     }
     
     def parse(self, response):
