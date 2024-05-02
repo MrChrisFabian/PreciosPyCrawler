@@ -9,8 +9,8 @@ def run_all_spiders():
     collection_name = 'products'  # replace with your collection name
     client = pymongo.MongoClient(mongo_uri)
     db = client[mongo_db]
-    # Drop the collection
     db[collection_name].drop()
+    # Drop the collection
     # Disconnect from MongoDB
     client.close()
     # Run all spiders

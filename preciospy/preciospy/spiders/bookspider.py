@@ -1,7 +1,6 @@
 import scrapy
 from preciospy.items import itemp
 
-
 class BookspiderSpider(scrapy.Spider):
     name = "nisseispider"
     allowed_domains = ["nissei.com"]
